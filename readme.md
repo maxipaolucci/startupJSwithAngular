@@ -12,7 +12,7 @@ Another boilerplate to start developing web applications without loose time doin
 * Gulp for building tasks.
 * Webpack to bundle resources and serve the webapp.
 * SASS to manage stylesheets.
-* Mocha and chai for test.
+* Karma for testing.
 
 
 ##Setup
@@ -42,6 +42,6 @@ from the command line: `>npm install -g webpack-dev-server gulp`
 
     If you are not doing development and just want to use the client webapp then run: `>gulp start`
 
-4.4) Navigate to `http://localhost:8080`
+4.4) Navigate to `http://localhost:8000`
 
 5) (Optional - Just for testing). Run the tests scripts doing: `>gulp test`  OR  `>gulp test:watch`
