@@ -12,7 +12,7 @@ Another boilerplate to start developing web applications without loose time doin
 * Gulp for building tasks.
 * Webpack to bundle resources and serve the webapp.
 * SASS to manage stylesheets.
-* Mocha and chai for test.
+* Karma for testing.
 
 
 ##Setup
