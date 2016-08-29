@@ -14,21 +14,21 @@ var PUBLIC_CSS_PATH = './public/css';
 /**
  * Default task when running just gulp. Here is just a shortcut for >gulp dev
  */
-gulp.task('default', ['dev']);
+gulp.task('default', ['start']);
 
 /**
  * Start the client server to use the app. First thing it does is compile SASS files outside src/app directory.
  */
 gulp.task('start', function(callback) {
-  runSequence('sass', 'npm:start', callback);
+  runSequence('npm:start', callback);
 });
 
 /**
  * Start the Development environment. Makes the build, starts watchers and start the server to make some development tasks
  */
-gulp.task('dev', function(callback) {
-  runSequence('sass', 'watch', 'start', callback);
-});
+// gulp.task('dev', function(callback) {
+//   runSequence('sass', 'watch', 'start', callback);
+// });
 
 /**
  * compile all sass resources into css ones.
@@ -55,7 +55,7 @@ gulp.task('watch', function() {
  * generates a new build (dist directory)
  */
 gulp.task('build', function(callback) {
-  runSequence('clean-build', 'sass', 'npm:build', callback);
+  runSequence('clean-build', 'npm:build', callback);
 });
 
 /**
